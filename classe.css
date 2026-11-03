@@ -1,0 +1,70 @@
+header{display:flex;justify-content:space-between;gap:16px}header a{color:white}main{max-width:960px}section,.classbox{background:#fff;border-radius:16px;padding:24px;margin:20px 0;box-shadow:0 3px 15px #0001}form{display:flex;flex-direction:column;gap:14px;max-width:500px}label{display:flex;flex-direction:column;gap:6px;font-weight:600}input,select,button{font:inherit;padding:12px;border-radius:8px}input,select{border:1px solid #aaa;width:100%}button{background:#762f4a;color:#fff;border:0;cursor:pointer}button:disabled{opacity:.55;cursor:wait}.secondary{background:#eee;color:#302431}.tabs,.top{display:flex;gap:14px;justify-content:space-between;align-items:center;flex-wrap:wrap}.tabs{justify-content:flex-start}.tabs button[aria-pressed=false]{background:#eee;color:#302431}#notice{white-space:pre-line;color:#762f4a;font-weight:bold}code{font-size:1.25em;letter-spacing:2px}li{margin:12px 0}li button{margin-left:12px;padding:6px 12px}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #edac25;outline-offset:3px}[hidden]{display:none!important}.classbox form{margin-top:20px}.puzzles{display:flex;gap:12px;flex-wrap:wrap}.puzzles a{background:#f7eff1;border-radius:8px;padding:14px;color:#762f4a}
+.level-selectors{margin-top:24px}.level-selectors h3{margin-bottom:18px}.level-selectors{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.level-selectors>h3{grid-column:1/-1}.classbox .level-picker{margin:0;padding:18px;border:1px solid #e0dbe5;border-radius:12px;max-width:none;min-width:0;gap:12px}.level-picker h4{margin:0;font-size:18px}.level-picker p{font-size:15px;margin:0}.level-picker small{color:#6d6475}.numeric-up-down{display:flex;max-width:170px;gap:6px}.numeric-up-down input{width:110px}.numeric-up-down>div{display:flex;flex-direction:column;gap:3px}.numeric-up-down button{padding:4px 12px;font-size:14px}.picker-preview{width:100%;height:130px;object-fit:cover;border-radius:8px}.level-picker>a{color:#762f4a;font-weight:bold}.classbox .puzzles>div{display:flex;gap:8px;align-items:center;flex-wrap:wrap}@media(max-width:600px){.level-selectors{grid-template-columns:1fr}.classbox{padding:16px}section{padding:16px}.site-header nav a{padding:8px;font-size:14px}}
+.student-row{padding:12px 0;border-bottom:1px solid #e0dbe5}.student-row>span{font-weight:600}.classbox .reset-password{background:#f8f2f4;padding:16px;border-radius:10px;max-width:500px}.reset-actions{display:flex;gap:10px;flex-wrap:wrap}.reset-password p{margin:0;font-size:16px;color:#762f4a}.student-row>button{font-size:14px}@media(max-width:500px){.student-row>button{display:block;margin:10px 0 0}}
+.result-time{font-size:15px;color:#286d4c;display:block;margin:8px 0}.puzzles>div{min-width:180px}
+.class-actions{display:flex;gap:10px;flex-wrap:wrap}.class-controls>p{font-size:16px;margin-bottom:12px}.danger{background:#a72d40;color:white}.class-roster{margin-top:24px;border:1px solid #e0dbe5;padding:16px;border-radius:12px}.class-roster summary{font-weight:bold;cursor:pointer;font-size:18px}.delete-class{background:#fff0f1;padding:16px;border-radius:12px}.delete-class p{font-size:16px;margin:0}.class-controls form{margin-bottom:20px}
+.class-results{margin:24px 0;padding:18px;border:1px solid #e0dbe5;box-shadow:none}.table-note{font-size:15px;margin-bottom:14px}.table-scroll{overflow-x:auto;margin-top:16px}.class-results table{width:100%;border-collapse:collapse;font-size:15px;min-width:620px}.class-results caption{text-align:left;font-weight:bold;padding:10px 0}.class-results th,.class-results td{padding:12px;text-align:left;border-bottom:1px solid #e0dbe5;vertical-align:top}.class-results th{background:#f0e5e9;color:#70243f}.class-results tbody tr:nth-child(even){background:#faf8fb}
+/* Surfaces lisibles sur le ciel étoilé */
+#login,#dashboard{color:#26344b;background:#f8fcff}#notice{color:#a3f3f2}#dashboard h2,#login h2{color:#26344b}.classbox{color:#26344b;background:#fff;border:1px solid #d4e5ef}.classbox p,#login p{color:#526279}button{background:#126879}.secondary,.tabs button[aria-pressed=false]{background:#e6f1f5;color:#26344b}.tabs button[aria-pressed=true]{background:#126879}.danger{background:#a72d40}.level-picker>a,.puzzles a{color:#126879}.puzzles a{background:#eaf6fa}.class-results th{background:#def1f5;color:#124657}.class-results tbody tr:nth-child(even){background:#f3f9fc}.class-controls .delete-class{background:#fff0f1}.classbox .reset-password{background:#eff7fb}.reset-password p{color:#124657}
+/* Progression élève et gestion des membres */
+.progress-box{background:#fff;color:#26344b;border:1px solid #d4e5ef}.progress-box h2{color:#26344b}.progress-box>p{color:#526279}
+.level-progress{margin:18px 0}.level-progress-head{display:flex;justify-content:space-between;gap:12px;margin-bottom:6px}
+.level-progress progress{width:100%;height:14px;accent-color:#126879}
+.progress-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.chip{font-size:14px;padding:6px 10px;border-radius:999px;background:#eef3f6;color:#526279;text-decoration:none}.chip.done{background:#dff3e8;color:#1d6b3a;font-weight:600}
+.member-picker{max-width:none}.member-picker .check{flex-direction:row;align-items:center;gap:10px;font-weight:400}.member-picker .check input{width:auto}
+
+/* Liste des classes et sections repliables */
+.class-index{background:#fff;color:#26344b;border:1px solid #d4e5ef;padding:18px 22px}.class-index h3{margin:0 0 8px}.class-index ul{margin:0;padding-left:18px}.class-index li{margin:8px 0}.class-index a{color:#126879;font-weight:700}.index-meta{color:#526279}
+.class-details>summary{cursor:pointer;font-weight:700;color:#126879;padding:10px 0;font-size:17px}.classbox.new-class{outline:3px solid #edac25;outline-offset:4px}
+
+/* Panneau « Partager un puzzle » */
+.share-panel{background:#fff;color:#26344b;border:1px solid #d4e5ef;padding:18px 22px}.share-panel h3{margin:0 0 14px}
+.spin-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.spin{display:flex;flex-direction:column;gap:6px;min-width:0}.spin-label{font-weight:700;font-size:15px}
+.spin-box{display:flex;align-items:stretch;border:1px solid #aab;border-radius:8px;overflow:hidden;background:#fff}.spin-box output{flex:1;min-width:0;padding:10px 12px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;align-self:center}
+.spin-arrows{display:flex;flex-direction:column}.spin-arrows button{padding:2px 12px;border-radius:0;font-size:13px}.spin:focus-visible{outline:3px solid #edac25;outline-offset:3px;border-radius:8px}
+.share-card{display:grid;grid-template-columns:160px 1fr;gap:16px;align-items:center;margin-top:16px}.share-card img{width:160px;height:160px;object-fit:cover;border-radius:12px}.share-card p{display:flex;flex-direction:column;gap:4px;margin:0;color:#26344b}.share-card strong{font-size:19px}.share-card button{grid-column:1/-1}
+@media(max-width:600px){.spin-row{grid-template-columns:1fr}.share-card{grid-template-columns:110px 1fr}.share-card img{width:110px;height:110px}}
+
+/* Images du thème choisi */
+.theme-gallery{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px;margin-top:16px}
+.theme-gallery .thumb{display:flex;flex-direction:column;gap:6px;padding:6px;background:#eef5f8;color:#26344b;border:2px solid transparent;border-radius:10px;font-size:13px;font-weight:600;position:relative}
+.theme-gallery .thumb img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:7px}
+.theme-gallery .thumb.selected{border-color:#126879;background:#dff1f6}
+.theme-gallery .thumb em{position:absolute;top:10px;left:10px;font-style:normal;font-size:12px;background:#1d6b3a;color:#fff;padding:2px 7px;border-radius:999px}
+@media(max-width:700px){.theme-gallery{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+/* Espace élève */
+.student-total{font-size:18px;font-weight:700;color:#26344b;background:#fff;border:1px solid #d4e5ef;border-radius:12px;padding:12px 16px}
+.student-class>summary{cursor:pointer;font-size:20px;font-weight:700;color:#126879;padding:4px 0}
+.student-table{width:100%;border-collapse:collapse;font-size:15px;min-width:520px;margin-top:12px}.student-table th,.student-table td{padding:10px;border-bottom:1px solid #e0dbe5;text-align:left;vertical-align:middle}
+.student-table th{background:#def1f5;color:#124657}.student-table a{display:flex;align-items:center;gap:10px;color:#126879;font-weight:600}.student-table img{width:56px;height:42px;object-fit:cover;border-radius:6px}
+.student-table .ok{color:#1d6b3a;font-weight:700}.student-table .todo{color:#8a6a2a}.student-table .stars{color:#e3a008;font-size:20px;letter-spacing:2px}
+
+/* Sign-in shared with Assiduité and TEJ2O */
+.pz-lead{font-size:17px;margin:0 0 16px}
+.pz-panel{background:#fbf7f9;border:1px solid #e6d9df;border-radius:14px;padding:18px;margin:18px 0}
+.pz-panel ol{margin:8px 0;padding-left:22px}.pz-panel li{margin:6px 0}
+.roles{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.role{text-align:left;background:#fff;color:#292333;border:2px solid #e6d9df;border-radius:16px;padding:22px;display:flex;flex-direction:column;gap:6px;font-weight:400}
+.role:hover,.role:focus-visible{border-color:#762f4a}.role b{font-size:21px;color:#762f4a}.role .ico{font-size:40px}
+.pz-login{max-width:480px}.pz-login h2{margin:12px 0 6px}.pz-login p{font-size:16px;margin:0 0 14px}.pz-liens{line-height:1.9}
+button.link{background:none;color:#762f4a;padding:0;text-decoration:underline;font-weight:700}
+.pz-msg{padding:10px 12px;border-radius:10px;margin:10px 0;white-space:pre-wrap;font-weight:600}.pz-msg.ok{background:#e3f4e8;color:#1d6b38}.pz-msg.err{background:#fbe4e4;color:#9b1c2c}
+.pz-q{background:#f7eff1;border-radius:8px;padding:10px}
+.pz-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}.pz-tab{background:#e6f1f5;color:#26344b}.pz-tab.on{background:#126879;color:#fff}
+.small{padding:6px 10px;font-size:14px}
+.fiche-fond{position:fixed;inset:0;background:#000a;display:grid;place-items:center;padding:16px;z-index:50}
+.fiche{background:#fff;border-radius:18px;padding:26px;max-width:420px;width:100%;text-align:center}.fiche .mdp{font:800 34px ui-monospace,Consolas,monospace;letter-spacing:2px;color:#762f4a;margin:12px 0}
+.guide h2{font-size:21px;margin:0 0 6px}
+.g-etapes{list-style:none;margin:0 0 12px;padding:0;display:flex;flex-direction:column;gap:8px}
+.g-etapes li{display:grid;grid-template-columns:34px minmax(0,1fr);gap:10px;align-items:center;padding:9px 10px;border:1.5px solid #e6d9df;border-radius:10px;background:#fff;margin:0}
+.g-etapes li.g-actif{border-color:#e8553d;background:#fdece8}
+.g-num{width:32px;height:32px;border-radius:50%;background:#762f4a;color:#fff;display:grid;place-items:center;font-weight:800}
+.g-chip{display:inline-block;background:#f7eff1;border:1.5px solid #762f4a;border-radius:7px;padding:0 8px;font-weight:700}
+.g-voir{grid-column:2;justify-self:start;margin:0}
+.g-fleche{position:absolute;z-index:1000;pointer-events:none;display:flex;flex-direction:column;align-items:center;gap:2px;animation:g-saut .6s ease-in-out infinite alternate}
+.g-fleche.dessous{flex-direction:column-reverse;animation-name:g-saut2}.g-fleche.dessous svg{transform:rotate(180deg)}
+.g-bulle{background:#e8553d;color:#fff;font-weight:700;font-size:14px;border-radius:999px;padding:3px 12px;white-space:nowrap;box-shadow:0 2px 6px rgba(0,0,0,.35)}
+.g-cible{outline:4px solid #e8553d!important;outline-offset:3px}
+@keyframes g-saut{from{transform:translateY(0)}to{transform:translateY(-8px)}}@keyframes g-saut2{from{transform:translateY(0)}to{transform:translateY(8px)}}
+@media(prefers-reduced-motion:reduce){.g-fleche{animation:none}}

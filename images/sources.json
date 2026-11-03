@@ -1,0 +1,482 @@
+[
+  {
+    "category": "animals",
+    "difficulty": 1,
+    "file": "images/animals-1.jpg",
+    "title": "Lion",
+    "author": "Hans Veth",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "source_url": "https://unsplash.com/photos/Xk-M3viIIJI",
+    "image_url": "https://images.unsplash.com/photo-1667373456456-f10855b9a764?w=1200&q=85&fit=crop&fm=jpg",
+    "original_dimensions": [
+      1200,
+      1800
+    ],
+    "dimensions": [
+      1000,
+      1000
+    ],
+    "processing": "Center square crop and resize only"
+  },
+  {
+    "category": "planets",
+    "difficulty": 1,
+    "file": "images/planets-1.jpg",
+    "title": "Earth from Apollo 17",
+    "author": "NASA / Apollo 17 crew",
+    "license": "NASA imagery usage guidelines (generally public domain)",
+    "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+    "source_url": "https://nssdc.gsfc.nasa.gov/photo_gallery/photogallery-earth.html",
+    "image_url": "https://nssdc.gsfc.nasa.gov/image/planetary/earth/apollo17_earth.jpg",
+    "original_dimensions": [
+      533,
+      533
+    ],
+    "dimensions": [
+      1000,
+      1000
+    ],
+    "processing": "Center square crop and resize only"
+  },
+  {
+    "category": "neighborhoods",
+    "difficulty": 1,
+    "file": "images/neighborhoods-1.jpg",
+    "title": "Montreal houses",
+    "author": "snap shoot",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "source_url": "https://unsplash.com/photos/PqRBSzmlfY8",
+    "image_url": "https://images.unsplash.com/photo-1694967699706-12a0b503eecb?w=1200&q=85&fit=crop&fm=jpg",
+    "original_dimensions": [
+      1200,
+      2133
+    ],
+    "dimensions": [
+      1000,
+      1000
+    ],
+    "processing": "Center square crop and resize only"
+  },
+  {
+    "category": "shops",
+    "difficulty": 1,
+    "file": "images/shops-1.jpg",
+    "title": "Italian bakery",
+    "author": "Pedro Bune",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "source_url": "https://unsplash.com/photos/WTuAYEnzQw4",
+    "image_url": "https://images.unsplash.com/photo-1772113726171-a055f110932f?w=1200&q=85&fit=crop&fm=jpg",
+    "original_dimensions": [
+      1200,
+      1800
+    ],
+    "dimensions": [
+      1000,
+      1000
+    ],
+    "processing": "Center square crop and resize only"
+  },
+  {
+    "category": "animals",
+    "difficulty": 2,
+    "file": "images/animals-2.jpg",
+    "title": "Elephant",
+    "author": "Howen",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "source_url": "https://unsplash.com/photos/kfurwQvAGG0",
+    "image_url": "https://images.unsplash.com/photo-1650468685760-ad2d9ccddf19?w=1200&q=85&fit=crop&fm=jpg",
+    "original_dimensions": [
+      1200,
+      1023
+    ],
+    "dimensions": [
+      1000,
+      1000
+    ],
+    "processing": "Center square crop and resize only"
+  },
+  {
+    "category": "planets",
+    "difficulty": 2,
+    "file": "images/planets-2.jpg",
+    "title": "Mars from Viking",
+    "author": "NASA / USGS",
+    "license": "NASA imagery usage guidelines (generally public domain)",
+    "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+    "source_url": "https://nssdc.gsfc.nasa.gov/photo_gallery/photogallery-mars.html",
+    "image_url": "https://nssdc.gsfc.nasa.gov/image/planetary/mars/marsglobe1.jpg",
+    "original_dimensions": [
+      1552,
+      1552
+    ],
+    "dimensions": [
+      1000,
+      1000
+    ],
+    "processing": "Center square crop and resize only"
+  },
+  {
+    "category": "neighborhoods",
+    "difficulty": 2,
+    "file": "images/neighborhoods-2.jpg",
+    "title": "Kingston homes",
+    "author": "Torsten Tronders",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "source_url": "https://unsplash.com/photos/KeNlcK50BSM",
+    "image_url": "https://images.unsplash.com/photo-1720469145899-0d361b7c3081?w=1200&q=85&fit=crop&fm=jpg",
+    "original_dimensions": [
+      1200,
+      800
+    ],
+    "dimensions": [
+      1000,
+      1000
+    ],
+    "processing": "Center square crop and resize only"
+  },
+  {
+    "category": "shops",
+    "difficulty": 2,
+    "file": "images/shops-2.jpg",
+    "title": "Storefront at night",
+    "author": "Erik Mclean",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "source_url": "https://unsplash.com/photos/Pfbj7KK1e30",
+    "image_url": "https://images.unsplash.com/photo-1662782217193-799358f10e66?w=1200&q=85&fit=crop&fm=jpg",
+    "original_dimensions": [
+      1200,
+      1800
+    ],
+    "dimensions": [
+      1000,
+      1000
+    ],
+    "processing": "Center square crop and resize only"
+  },
+  {
+    "category": "animals",
+    "difficulty": 3,
+    "file": "images/animals-3.jpg",
+    "title": "Red fox",
+    "author": "Jeremy Vessey",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "source_url": "https://unsplash.com/photos/oM4uCeXpKSc",
+    "image_url": "https://images.unsplash.com/photo-1501707305551-9b2adda5e527?w=1200&q=85&fit=crop&fm=jpg",
+    "original_dimensions": [
+      1200,
+      817
+    ],
+    "dimensions": [
+      1000,
+      1000
+    ],
+    "processing": "Center square crop and resize only"
+  },
+  {
+    "category": "planets",
+    "difficulty": 3,
+    "file": "images/planets-3.jpg",
+    "title": "Jupiter and Io",
+    "author": "NASA / JPL",
+    "license": "NASA imagery usage guidelines (generally public domain)",
+    "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+    "source_url": "https://nssdc.gsfc.nasa.gov/photo_gallery/photogallery-jupiter.html",
+    "image_url": "https://nssdc.gsfc.nasa.gov/image/planetary/jupiter/jupiter_io.jpg",
+    "original_dimensions": [
+      727,
+      848
+    ],
+    "dimensions": [
+      1000,
+      1000
+    ],
+    "processing": "Center square crop and resize only"
+  },
+  {
+    "category": "neighborhoods",
+    "difficulty": 3,
+    "file": "images/neighborhoods-3.jpg",
+    "title": "Calgary suburb",
+    "author": "Daniel Miksha",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "source_url": "https://unsplash.com/photos/4G7ZEDzH-6w",
+    "image_url": "https://images.unsplash.com/photo-1770938474431-f83143a10268?w=1200&q=85&fit=crop&fm=jpg",
+    "original_dimensions": [
+      1200,
+      2133
+    ],
+    "dimensions": [
+      1000,
+      1000
+    ],
+    "processing": "Center square crop and resize only"
+  },
+  {
+    "category": "shops",
+    "difficulty": 3,
+    "file": "images/shops-3.jpg",
+    "title": "Chinatown barber shop",
+    "author": "Drew Sullivan",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "source_url": "https://unsplash.com/photos/OK-7LWLp5p8",
+    "image_url": "https://images.unsplash.com/photo-1529445654487-3bde9b55e0b2?w=1200&q=85&fit=crop&fm=jpg",
+    "original_dimensions": [
+      1200,
+      882
+    ],
+    "dimensions": [
+      1000,
+      1000
+    ],
+    "processing": "Center square crop and resize only"
+  },
+  {
+    "category": "animals",
+    "difficulty": 4,
+    "file": "images/animals-4.jpg",
+    "title": "Arctic fox",
+    "author": "Jonatan Pie",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "source_url": "https://unsplash.com/photos/xgTMSz6kegE",
+    "image_url": "https://images.unsplash.com/photo-1470093851219-69951fcbb533?w=1200&q=85&fit=crop&fm=jpg",
+    "original_dimensions": [
+      1200,
+      800
+    ],
+    "dimensions": [
+      1000,
+      1000
+    ],
+    "processing": "Center square crop and resize only"
+  },
+  {
+    "category": "planets",
+    "difficulty": 4,
+    "file": "images/planets-4.jpg",
+    "title": "Saturn from Voyager",
+    "author": "NASA / JPL",
+    "license": "NASA imagery usage guidelines (generally public domain)",
+    "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+    "source_url": "https://nssdc.gsfc.nasa.gov/photo_gallery/photogallery-saturn.html",
+    "image_url": "https://nssdc.gsfc.nasa.gov/image/planetary/saturn/saturn.jpg",
+    "original_dimensions": [
+      617,
+      480
+    ],
+    "dimensions": [
+      1000,
+      1000
+    ],
+    "processing": "Center square crop and resize only"
+  },
+  {
+    "category": "neighborhoods",
+    "difficulty": 4,
+    "file": "images/neighborhoods-4.jpg",
+    "title": "Aerial neighborhood",
+    "author": "Raunaq Sachdev",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "source_url": "https://unsplash.com/photos/CL2XoqALqAA",
+    "image_url": "https://images.unsplash.com/photo-1678331900261-75d9fb7039ae?w=1200&q=85&fit=crop&fm=jpg",
+    "original_dimensions": [
+      1200,
+      2134
+    ],
+    "dimensions": [
+      1000,
+      1000
+    ],
+    "processing": "Center square crop and resize only"
+  },
+  {
+    "category": "shops",
+    "difficulty": 4,
+    "file": "images/shops-4.jpg",
+    "title": "Flower shop",
+    "author": "Karwin Luo",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "source_url": "https://unsplash.com/photos/p-nDp7mXAeQ",
+    "image_url": "https://images.unsplash.com/photo-1774175104465-d5f6f6e438a0?w=1200&q=85&fit=crop&fm=jpg",
+    "original_dimensions": [
+      1200,
+      1800
+    ],
+    "dimensions": [
+      1000,
+      1000
+    ],
+    "processing": "Center square crop and resize only"
+  },
+  {
+    "category": "animals",
+    "difficulty": 5,
+    "file": "images/animals-5.jpg",
+    "title": "Giraffe",
+    "author": "Leighton Robinson",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "source_url": "https://unsplash.com/photos/Qf3qxh6g_Ac",
+    "image_url": "https://images.unsplash.com/photo-1552525474-160d91b976c1?w=1200&q=85&fit=crop&fm=jpg",
+    "original_dimensions": [
+      1200,
+      1800
+    ],
+    "dimensions": [
+      1000,
+      1000
+    ],
+    "processing": "Center square crop and resize only"
+  },
+  {
+    "category": "planets",
+    "difficulty": 5,
+    "file": "images/planets-5.jpg",
+    "title": "Mercury from Mariner 10",
+    "author": "NASA / JPL",
+    "license": "NASA imagery usage guidelines (generally public domain)",
+    "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+    "source_url": "https://nssdc.gsfc.nasa.gov/photo_gallery/photogallery-mercury.html",
+    "image_url": "https://nssdc.gsfc.nasa.gov/image/planetary/mercury/mercuryglobe1.jpg",
+    "original_dimensions": [
+      421,
+      720
+    ],
+    "dimensions": [
+      1000,
+      1000
+    ],
+    "processing": "Center square crop and resize only"
+  },
+  {
+    "category": "neighborhoods",
+    "difficulty": 5,
+    "file": "images/neighborhoods-5.jpg",
+    "title": "London colorful houses",
+    "author": "Lee Jeffs",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "source_url": "https://unsplash.com/photos/P709cb13vWI",
+    "image_url": "https://images.unsplash.com/photo-1550603344-8bc225c9b9e3?w=1200&q=85&fit=crop&fm=jpg",
+    "original_dimensions": [
+      1200,
+      800
+    ],
+    "dimensions": [
+      1000,
+      1000
+    ],
+    "processing": "Center square crop and resize only"
+  },
+  {
+    "category": "shops",
+    "difficulty": 5,
+    "file": "images/shops-5.jpg",
+    "title": "Bookstore",
+    "author": "Hanna Lazar",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "source_url": "https://unsplash.com/photos/Pg0ZDRyWjSc",
+    "image_url": "https://images.unsplash.com/photo-1765547683228-0b97539d7f23?w=1200&q=85&fit=crop&fm=jpg",
+    "original_dimensions": [
+      1200,
+      630
+    ],
+    "dimensions": [
+      1000,
+      1000
+    ],
+    "processing": "Center square crop and resize only"
+  },
+  {
+    "category": "animals",
+    "difficulty": 6,
+    "file": "images/animals-6.jpg",
+    "title": "Zebra",
+    "author": "Zac Wolff",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "source_url": "https://unsplash.com/photos/kmQFBYibklw",
+    "image_url": "https://images.unsplash.com/photo-1577809986295-cfa34464e8a3?w=1200&q=85&fit=crop&fm=jpg",
+    "original_dimensions": [
+      1200,
+      1799
+    ],
+    "dimensions": [
+      1000,
+      1000
+    ],
+    "processing": "Center square crop and resize only"
+  },
+  {
+    "category": "planets",
+    "difficulty": 6,
+    "file": "images/planets-6.jpg",
+    "title": "Neptune from Voyager 2",
+    "author": "NASA / JPL",
+    "license": "NASA imagery usage guidelines (generally public domain)",
+    "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+    "source_url": "https://nssdc.gsfc.nasa.gov/photo_gallery/photogallery-neptune.html",
+    "image_url": "https://nssdc.gsfc.nasa.gov/image/planetary/neptune/neptune.jpg",
+    "original_dimensions": [
+      650,
+      650
+    ],
+    "dimensions": [
+      1000,
+      1000
+    ],
+    "processing": "Center square crop and resize only"
+  },
+  {
+    "category": "neighborhoods",
+    "difficulty": 6,
+    "file": "images/neighborhoods-6.jpg",
+    "title": "Colorful row houses",
+    "author": "Meg Jenson",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "source_url": "https://unsplash.com/photos/bjh71cPmJCU",
+    "image_url": "https://images.unsplash.com/photo-1658893368726-5dd55e7bf42d?w=1200&q=85&fit=crop&fm=jpg",
+    "original_dimensions": [
+      1200,
+      900
+    ],
+    "dimensions": [
+      1000,
+      1000
+    ],
+    "processing": "Center square crop and resize only"
+  },
+  {
+    "category": "shops",
+    "difficulty": 6,
+    "file": "images/shops-6.jpg",
+    "title": "Plant store corner",
+    "author": "Johnny Ho",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "source_url": "https://unsplash.com/photos/MrVJ188KCL4",
+    "image_url": "https://images.unsplash.com/photo-1730731865107-76da44e59ae7?w=1200&q=85&fit=crop&fm=jpg",
+    "original_dimensions": [
+      1200,
+      1800
+    ],
+    "dimensions": [
+      1000,
+      1000
+    ],
+    "processing": "Center square crop and resize only"
+  }
+]

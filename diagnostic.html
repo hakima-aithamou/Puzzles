@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Diagnostic de connexion · Mille et une pièces</title>
+<style>
+body{font-family:system-ui,sans-serif;max-width:760px;margin:2rem auto;padding:0 1rem;line-height:1.5;color:#1b1b1b}
+button{font-size:1.1rem;padding:.7rem 1.2rem;border-radius:8px;border:0;background:#2b5fd9;color:#fff;cursor:pointer}
+button:disabled{opacity:.5}
+table{border-collapse:collapse;width:100%;margin:1rem 0}
+td,th{border:1px solid #ccc;padding:.45rem .6rem;text-align:left;vertical-align:top;font-size:.95rem}
+.ok{color:#0a7a2f;font-weight:700}.ko{color:#b3261e;font-weight:700}
+pre{background:#f4f4f4;padding:.8rem;border-radius:8px;white-space:pre-wrap;word-break:break-word}
+</style>
+</head>
+<body>
+<h1>Diagnostic de connexion</h1>
+<p>Cette page teste la connexion entre cet appareil et le serveur de la classe. Aucun compte réel n'est utilisé. Clique sur le bouton, attends la fin des tests, puis envoie le rapport à ton enseignante.</p>
+<button id="go">Lancer les tests</button>
+<table id="res" hidden>
+<thead><tr><th>Test</th><th>Résultat</th><th>Détail</th></tr></thead>
+<tbody></tbody>
+</table>
+<div id="rep" hidden>
+<button id="copy">Copier le rapport</button>
+<pre id="txt"></pre>
+</div>
+<script>
+'use strict';
+const BASE='https://dcnfxwtszqeqfaxlbfbl.supabase.co';
+const KEY='sb_publishable_UTy7pKbk6xnw6mjRoy08GQ_5OuU1ymE';
+const FN=BASE+'/functions/v1/assiduite';
+const fake={action:'student_login',first:'diag',last:'diag',password:'diagnostic-123'};
+
+async function timed(url,opts){
+  const ctl=new AbortController(),t=setTimeout(()=>ctl.abort(),15000),s=performance.now();
+  try{
+    const r=await fetch(url,{...opts,signal:ctl.signal,cache:'no-store'});
+    let body='';try{body=(await r.text()).slice(0,120)}catch{}
+    return {ok:true,status:r.status,ms:Math.round(performance.now()-s),body};
+  }catch(e){
+    return {ok:false,ms:Math.round(performance.now()-s),err:(e&&e.name==='AbortError')?'délai dépassé (15 s)':String(e&&e.message||e)};
+  }finally{clearTimeout(t)}
+}
+
+const tests=[
+ {name:'1. Service d\'authentification (GET)',
+  run:()=>timed(BASE+'/auth/v1/health',{headers:{apikey:KEY}}),
+  pass:r=>r.ok&&r.status===200},
+ {name:'2. Fonction du serveur (GET)',
+  run:()=>timed(FN,{method:'GET'}),
+  pass:r=>r.ok&&r.status===405},
+ {name:'3. Connexion test, format simple (POST sans vérification préalable)',
+  run:()=>timed(FN,{method:'POST',headers:{'Content-Type':'text/plain;charset=UTF-8'},body:JSON.stringify(fake)}),
+  pass:r=>r.ok&&r.status===401},
+ {name:'4. Connexion test, format JSON (vérification puis POST)',
+  run:()=>timed(FN,{method:'POST',headers:{apikey:KEY,'Content-Type':'application/json'},body:JSON.stringify(fake)}),
+  pass:r=>r.ok&&r.status===401},
+ {name:'5. Connexion test, format JSON (2e essai)',
+  run:()=>timed(FN,{method:'POST',headers:{apikey:KEY,'Content-Type':'application/json'},body:JSON.stringify(fake)}),
+  pass:r=>r.ok&&r.status===401}
+];
+
+const tbody=document.querySelector('#res tbody');
+document.getElementById('go').onclick=async function(){
+  this.disabled=true;tbody.textContent='';document.getElementById('res').hidden=false;
+  const lines=['Rapport de diagnostic',
+    'Date : '+new Date().toISOString(),
+    'Appareil : '+navigator.userAgent,
+    'En ligne : '+navigator.onLine,
+    'Page : '+location.href,''];
+  for(const t of tests){
+    const r=await t.run(),good=t.pass(r);
+    const tr=document.createElement('tr');
+    const detail=r.ok?('code '+r.status+' · '+r.ms+' ms'+(r.body?' · '+r.body:'')):('ÉCHEC · '+r.ms+' ms · '+r.err);
+    for(const [txt,cls] of [[t.name],[good?'Réussi':'Échec',good?'ok':'ko'],[detail]]){
+      const td=document.createElement('td');td.textContent=txt;if(cls)td.className=cls;tr.append(td)
+    }
+    tbody.append(tr);
+    lines.push((good?'[OK]    ':'[ÉCHEC] ')+t.name+' → '+detail);
+  }
+  lines.push('','Lecture : un test « Réussi » signifie que le serveur a répondu comme prévu.',
+   'Un « Échec » avec un message du navigateur indique que la requête n\'a pas atteint le serveur.');
+  document.getElementById('txt').textContent=lines.join('\n');
+  document.getElementById('rep').hidden=false;this.disabled=false;
+};
+document.getElementById('copy').onclick=async function(){
+  const t=document.getElementById('txt').textContent;
+  try{await navigator.clipboard.writeText(t);this.textContent='Rapport copié'}
+  catch{const r=document.createRange();r.selectNodeContents(document.getElementById('txt'));const s=getSelection();s.removeAllRanges();s.addRange(r);this.textContent='Sélectionné : fais Ctrl+C'}
+};
+</script>
+</body>
+</html>
